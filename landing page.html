@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>ESERCAL</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>ESERCAL</h1> 
+        <p>Square & Rectangle Calculator</p>
+    </header>
+    <section id="welcome">
+        <h2>Welcome to ESERCAL</h2>
+        <p>ESERCAL helps you find area and perimeter in less than 3 seconds</p>
+    </section>
+    <section id="selector">
+        <h3>Which one you want to calculate?</h3>
+    </section>
+    <!--
+    <div class="container">
+        <div class="box1">Square</div>
+        <div class="box2">Rectangle</div>
+    </div>
+    -->
+    <div class="containerSelection">
+    <input type="button" id="selectSquare" value="Square" onclick="">
+    <input type="button" id="selectRectangle" value="Rectangle" onclick="">
+    </div>
+    <hr>
+    <container id="square">
+    <div id="squarearea">
+    <h3>Square Area</h3>
+        <p id="formula">Area = length x length</p>
+        <label for="lengthSquareArea">Enter the length:</label><br>
+        <form>
+            <input type="number" id="lengthSquareArea" min="1" placeholder="(in cm)" required>
+            <container id="button">
+            <input type="button" id="calculate" value="Calculate" onclick="calculateSquareArea()">
+            <input type="button" id="reset" value="Reset">
+            </container>
+        </form>
+        <p id="squareAreaResult"></p>
+    </div>
+    <div id="squareperimeter">
+        <h3>Square Perimeter</h3>
+        <p id="formula">Perimeter = 4 x length</p>
+        <label for="lengthSquarePerimeter">Enter the length:</label><br>
+        <form>
+            <input type="number" id="lengthSquarePerimeter" min="1" placeholder="(in cm)" required>
+            <container id="button">
+            <input type="button" id="calculate" value="Calculate" onclick="calculateSquarePerimeter()">
+            <input type="button" id="reset" value="Reset">
+            </container>
+        </form>
+        <p id="squarePerimeterResult"></p>
+    </div>
+    </container>
+    <hr>
+    <container id="rectangle">
+    <div id="rectanglearea">
+    <h3>Rectangle Area</h3>
+        <p id="formula">Area = length x width</p>
+        <form>
+            <label for="lengthRectangleArea">Enter the length:</label><br>
+            <input type="number" id="lengthRectangleArea" min="1" placeholder="(in cm)" required><br>
+            <label for="widthRectangleArea">Enter the width:</label><br>
+            <input type="number" id="widthRectangleArea" min="1" placeholder="(in cm)" required>
+            <container id="button">
+            <input type="button" id="calculate" value="Calculate" onclick="calculateRectangleArea()">
+            <input type="button" id="reset" value="Reset">
+            </container>
+        </form>
+        <p id="rectangleAreaResult"></p>
+    </div>
+    <div id="rectangleperimeter">
+    <h3>Rectangle Perimeter</h3>
+        <p id="formula">Perimeter = (2 x length) + (2 x width)</p>
+        <form>
+            <label for="lengthRectanglePerimeter">Enter the length:</label><br>
+            <input type="number" id="lengthRectanglePerimeter" min="1" placeholder="(in cm)" required><br>
+            <label for="widthRectanglePerimeter">Enter the width:</label><br>
+            <input type="number" id="widthRectanglePerimeter" min="1" placeholder="(in cm)" required>
+            <container id="button">
+            <input type="button" id="calculate" value="Calculate" onclick="calculateRectanglePerimeter()">
+            <input type="button" id="reset" value="Reset">
+            </container>
+        </form>
+        <p id="rectanglePerimeterResult"></p>
+    </div>
+    </container>
+</body>
+<footer>Made by Savira</footer>
+</html>
